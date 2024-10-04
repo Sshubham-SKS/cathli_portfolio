@@ -1,0 +1,353 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+   width: 100%;
+   height: 100%;
+}
+
+#mincircle {
+   width: 10px;
+   height: 10px;
+   position: absolute;
+   background-color: #fff;
+   z-index: 9999;
+   border-radius: 50%;
+   transition: transform 0.3s ease;
+}
+
+.bounding {
+   width: fit-content;
+}
+
+.bounding .boundingelem {
+   transform: translateY(100%);
+}
+
+#main {
+   width: 100%;
+   background-color: black;
+}
+
+#hero {
+   width: 100%;
+   height: 100vh;
+   background-color: black;
+   color: #fff;
+   position: relative;
+}
+
+#nav {
+   width: 100%;
+   padding: 20px 40px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #fff;
+}
+
+#nav a {
+   text-decoration: none;
+   font-size: 16px;
+   color: #fff;
+   transition: color 0.3s ease;
+}
+
+#nav a:hover {
+   color: #f39c12; /* Highlight color on hover */
+}
+
+#heading {
+   margin-top: 88px;
+   animation: fadeIn 1s ease forwards;
+}
+
+#heading h1 {
+   font-size: 8vw;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 900;
+   line-height: 1;
+   opacity: .8;
+   margin-left: 32px;
+   text-transform: uppercase;
+}
+
+#heading #secondh1 {
+   margin-left: 136px;
+}
+
+.boxsecondh1 {
+   width: fit-content;
+   display: flex;
+   align-items: end;
+   flex-direction: column;
+}
+
+.boxsecondh1 h5 {
+   text-align: right;
+   position: relative;
+   font-size: 16px;
+}
+
+#smallheading {
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   margin-top: 100px;
+   padding-right: 50px;
+}
+
+#smallheading h5 {
+   text-transform: uppercase;
+   margin-top: .5vw;
+   font-size: 1vw;
+   text-align: right;
+   animation: slideIn 0.5s forwards;
+}
+
+#herofooter {
+   padding: 0 2vw;
+   width: 100%;
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   bottom: 3%;
+}
+
+#herofooter a {
+   color: #fff;
+   text-transform: uppercase;
+   text-decoration: none;
+   transition: transform 0.3s ease;
+}
+
+#herofooter a:hover {
+   transform: scale(1.05); /* Scale effect on hover */
+}
+
+#herofooter #iconset {
+   display: flex;
+   gap: 5px;
+}
+
+#herofooter .circle {
+   width: 25px;
+   height: 25px;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background-color: #888;
+   display: flex;
+   transition: background-color 0.3s ease;
+}
+
+#herofooter .circle:hover {
+   background-color: #f39c12; /* Highlight color on hover */
+}
+
+#second {
+   width: 100%;
+   height: 110vh;
+   padding-right: 10vw;
+   padding-top: 180px;
+   background-color: black;
+   color: #fff;
+}
+
+.elem {
+   width: 100%;
+   padding: 4vw 1vw;
+   padding-right: 0;
+   border-top: 1px solid #888;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+.elem:hover {
+   transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.elem h1 {
+   font-size: 8vh;
+   text-transform: uppercase;
+   opacity: .7;
+   animation: fadeInEase 1s ease forwards; /* Added animation */
+}
+
+.elemlast {
+   border-bottom: 1px solid #888;
+}
+
+.elem img {
+   position: absolute;
+   z-index: 9999;
+   height: 140%;
+   display: none;
+   transition: opacity 0.3s ease;
+}
+
+#about {
+   width: 100%;
+   background-color: black;
+   padding: 10vw 5vw;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 50px;
+   padding-left: 40vw;
+}
+
+#textabout {
+   width: 25rem;
+   color: #fff;
+}
+
+#textabout h5 {
+   text-transform: uppercase;
+   opacity: .6;
+   margin-bottom: 10px;
+   transition: transform 0.3s ease;
+}
+
+#textabout h5:hover {
+   transform: scale(1.05); /* Scale effect on hover */
+}
+
+#textabout p {
+   line-height: 1.7;
+   margin-bottom: 30px;
+}
+
+#about img {
+   width: 200px;
+   border-radius: 40%;
+}
+
+#textabout a {
+   padding: 12px 22px;
+   border: 1px solid #fff;
+   border-radius: 100px;
+   color: #fff;
+   font-size: 12px;
+   text-decoration: none;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#textabout a:hover {
+   background-color: #f39c12; /* Highlight color on hover */
+   color: black; /* Text color change on hover */
+}
+
+#subscribe {
+   color: #fff;
+   padding: 20px 30px;
+   padding-bottom: 7vw;
+   background-color: black;
+}
+
+#subscribe h5 {
+   text-transform: uppercase;
+   opacity: .6;
+}
+
+#subscribe h3 {
+   text-transform: uppercase;
+   font-size: 14px;
+   margin-top: 10px;
+}
+
+#footer {
+   color: #fff;
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 40px 30px;
+}
+
+.footerleft {
+   display: flex;
+   gap: 20px;
+}
+
+.footerright {
+   display: flex;
+   gap: 30px;
+}
+
+#footer a {
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: 500;
+   color: #fff;
+   text-decoration: none;
+   transition: color 0.8s ease;
+}
+
+#footer a:hover {
+   color: #f39c12; /* Highlight color on hover */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+
+@keyframes slideIn {
+   from {
+       transform: translateX(20px);
+       opacity: 0;
+   }
+   to {
+       transform: translateX(0);
+       opacity: 1;
+   }
+}
+
+@keyframes fadeInEase {
+   0% {
+       opacity: 0;
+       transform: translateY(-20px);
+   }
+   50% {
+       opacity: 0.5;
+   }
+   100% {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+/* Adding hover effects for text */
+#nav a:hover,
+#herofooter a:hover,
+#textabout a:hover {
+   animation: textHoverEase 0.3s ease forwards;
+}
+
+@keyframes textHoverEase {
+   0% {
+       color: #fff;
+       transform: scale(1);
+   }
+   100% {
+       color: #f39c12; /* Highlight color */
+       transform: scale(1.1);
+   }
+}
+
+
